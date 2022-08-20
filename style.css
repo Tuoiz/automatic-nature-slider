@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background-color: #202142;
+  line-height: 1.6;
+  /* background: linear-gradient(#202142, #ff6a95); */
+}
+.container{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+.container .heading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+.container .heading:hover{
+  color: #ff6a95;
+  transition: all ease-out 0.3s;
+}
+.container .scroll {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.container .scroll button{
+  width: 40px;
+  height: 30px;
+  outline: none;
+  color: #000;
+  background: #fff;
+  transition: all ease-in-out 0.3s;
+}
+.container .scroll button:hover{
+  color: #ff6a95;
+  background: #000;
+  transition: all ease-out 0.3s;
+}
+.container .scroll .slider{
+  background: linear-gradient(to right,#fff,#000,#ff6a95);
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 80vw;
+}
+.image{
+  padding:10px;
+}
+
+.container .scroll img{
+  transition: all ease-out 0.3s;
+}
+.container .scroll img:hover{
+  transform: scale(1.075);
+  transition: all ease-out 0.3s;
+  cursor: pointer;
+}
